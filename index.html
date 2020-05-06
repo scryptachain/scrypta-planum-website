@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#3ed2a7">
+
+	<link rel="shortcut icon" href="./favicon.png" />
+
+	<title>Planum - Sidechain Layer</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+	<link rel="stylesheet" href="assets/css/theme.min.css" />
+	<link rel="stylesheet" href="assets/css/themes/creative.css" />
+
+	<!-- Head Libs -->
+	<script async src="assets/vendors/modernizr.min.js"></script>
+
+</head>
+
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern"
+	data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+
+	<div id="wrap">
+
+		<header class="main-header main-header-overlay" data-sticky-header="true"
+			data-sticky-options='{ "stickyTrigger": "first-section" }'>
+
+			<div class="mainbar-wrap">
+				<div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
+				<div class="container-fluid mainbar-container">
+					<div class="mainbar">
+						<div class="row mainbar-row align-items-lg-stretch px-4">
+
+							<div class="col-auto pr-5">
+								<div class="navbar-header">
+									<a class="navbar-brand" href="/" rel="home">
+										<span class="navbar-brand-inner">
+											<img class="logo-dark" src="./assets/img/logo/planum.png"
+												style="width: 75%;">
+											<img class="logo-sticky" src="./assets/img/logo/planum.png"
+												style="width: 75%;">
+											<img class="mobile-logo-default" src="./assets/img/logo/planum.png">
+											<img class="logo-default" src="./assets/img/logo/planum.png"
+												style="width: 75%;">
+										</span>
+									</a>
+									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile"
+										data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false"
+										data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
+										<span class="sr-only">Toggle navigation</span>
+										<span class="bars">
+											<span class="bar"></span>
+											<span class="bar"></span>
+											<span class="bar"></span>
+										</span>
+									</button>
+								</div><!-- /.navbar-header -->
+							</div><!-- /.col -->
+
+							<div class="col">
+
+								<div class="collapse navbar-collapse" id="main-header-collapse">
+
+									<ul id="primary-nav"
+										class="main-nav nav align-items-lg-stretch justify-content-lg-start"
+										data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'
+										data-localscroll="true">
+
+										<li>
+											<a href="#content">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Home</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#about">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">About</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#works">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">How it works</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#manent">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Manent</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="#explorer">
+												<span class="link-icon"></span>
+												<span class="link-txt">
+													<span class="link-ext"></span>
+													<span class="txt">Explorer</span>
+												</span>
+											</a>
+										</li>
+									</ul><!-- /#primary-nav  -->
+
+								</div><!-- /#main-header-collapse -->
+
+							</div><!-- /.col -->
+
+							<div class="col text-right">
+
+								<div class="header-module">
+
+									<a href="https://chains.planum.dev/#/create" target="_blank"
+										class="btn btn-default text-uppercase circle btn-bordered border-thick font-size-12 font-weight-semibold btn-white">
+										<span>
+											<span class="btn-txt">Create a Token</span>
+										</span>
+									</a>
+
+								</div><!-- /.header-module -->
+
+							</div><!-- /.col -->
+
+						</div><!-- /.mainbar-row -->
+					</div><!-- /.mainbar -->
+				</div><!-- /.mainbar-container -->
+			</div><!-- /.mainbar-wrap -->
+
+		</header><!-- /.main-header -->
+
+		<main id="content" class="content">
+
+			<!--main section-->
+			<section class="vc_row fullheight d-flex flex-wrap align-items-center pb-50">
+
+				<div class="lqd-particles-bg-wrap">
+
+					<div class="ld-particles-container">
+						<div class="ld-particles-inner" id="ld-1527244273759-519b63e0-a9d6" data-particles="true"
+							data-particles-options='{"particles":{"number":{"value":5,"density":2},"color":{"value":["#f9b851","#60eacb","#ff97af","#4e6bff"]},"shape":{"type":["circle","edge","triangle"]},"size":{"value":55,"random":true,"anim":{"enable":true,"size_min":40,"speed":5}},"move":{"enable":true,"direction":"right","speed":1,"random":true,"out_mode":"out","attract":{"enable":true,"rotateX":1200,"rotateY":600}}},"interactivity":[],"retina_detect":true}'>
+						</div>
+					</div>
+
+				</div><!-- /.lqd-particles-bg-wrap -->
+
+				<div class="container">
+
+					<div class="row d-flex flex-wrap align-items-center">
+						<div class="lqd-column col-lg-5 col-md-6 lqd-column" data-custom-animations="true"
+							data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":51,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+							<div class="ld-fancy-heading mask-text">
+								<h1 data-split-text="true" data-custom-animations="true"
+									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+									data-split-options='{"type":"lines"}'>
+									<span class="ld-fh-txt">Planum</span>
+								</h1>
+							</div><!-- /.ld-fancy-heading -->
+							<div class="ld-fancy-heading mask-text mb-75">
+								<p data-split-text="true" data-custom-animations="true"
+									data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}'
+									data-split-options='{"type":"lines"}'>
+									<span class="ld-fh-txt">An open-source and permissionless sidechains system that
+										provide to anyone a clear interface where create, issue and track tokenized
+										assets.</span>
+								</p>
+							</div><!-- /.ld-fancy-heading -->
+
+							<div class="row">
+								<div class="lqd-column col-sm-6 mb-3 mb-md-0">
+									<a href="https://chains.planum.dev/#/create"
+										class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold"
+										data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+										<span>
+											<span class="btn-txt">Create your Token</span>
+										</span>
+									</a>
+								</div><!-- /.col-sm-6 -->
+							</div><!-- /.row -->
+						</div><!-- /.col-lg-5 col-md-6 -->
+
+						<div class="lqd-column col-lg-7 col-md-6 hidden-xs hidden-sm hidden-md">
+							<div class="ld-masked-image" data-dynamic-shape="true">
+								<svg version="1.1" class="scene" width="0" height="0" preserveAspectRatio="none"
+									viewBox="0 0 1240 700">
+									<defs>
+										<clipPath id="masked-image-1">
+											<path fill="black"
+												d="M131,40 C84.135,83.534 96.819,148.446 63.283,217.394 C31.508,282.723 -3.621,324.812 1.461,394.323 C3.451,421.533 12.117,449.828 29.796,480.002 C87.412,578.34 -15.301,663.448 94.611,833.387 C156.302,928.77 316.559,918.015 435.971,936.052 C572.741,956.711 653.384,1003.601 753.566,971.715 C877.689,932.209 924.99262,809.932822 972.63862,707.700822 C1063.84662,512.000822 1038.71071,197.732895 884.476705,67.2268952 C788.919705,-13.6291048 714.704,70.008 529,43 C339.693,15.468 212.609,-35.808 131,40 Z"
+												pathdata:id="
+											M175.270836,26.7977911 C128.405836,70.3317911 129.938279,144.739124 96.4022789,213.687124 C64.6272789,279.016124 41.242383,286.071679 46.324383,355.582679 C48.314383,382.792679 79.5246278,459.251586 88.7738696,492.334164 C116.497714,591.496483 -75.3047466,680.552915 34.6072534,850.491915 C96.2982534,945.874915 281.559,906.015 400.971,924.052 C537.741,944.711 678.161685,902.348368 778.343685,870.462368 C902.466685,830.956368 927.354,806.232 975,704 C1066.208,508.3 1058.68971,185.848951 904.455709,55.3429506 C808.898709,-25.5130494 786.027661,117.60054 600.323661,90.5925401 C411.016661,63.0605401 256.879836,-49.0102089 175.270836,26.7977911 Z;
+											M200.391256,6 C138.06059,22.7990703 77.9622177,42.6445401 44.4262177,111.59254 C12.6512177,176.92154 -4.1051307,212.01786 0.976869296,281.52886 C2.9668693,308.73886 99.0297526,534.545109 108.278994,567.627688 C136.002839,666.790006 -29.1381304,721.523368 80.7738696,891.462368 C142.46487,986.845368 331.636556,840.153183 451.048556,858.190183 C587.818556,878.849183 705.371102,948.496676 805.553102,916.610676 C929.676102,877.104676 941.497784,689.3436 989.143784,587.1116 C1080.35178,391.4116 1050.68971,206.848951 896.455709,76.3429506 C800.898709,-4.5130494 778.027661,138.60054 592.323661,111.59254 C403.016661,84.0605401 312.765712,-24.2866392 200.391256,6 Z" />
+										</clipPath>
+									</defs>
+								</svg>
+								<figure class="clip-svg" data-responsive-bg="true"
+									style="clip-path: url(#masked-image-1); -webkit-clip-path: url(#masked-image-1);">
+									<img src="./assets/img/bg_home.png" alt="Image">
+								</figure>
+							</div><!-- /ld-masked-image -->
+						</div><!-- /.col-lg-7 col-md-6 -->
+					</div><!-- /.row -->
+
+				</div><!-- /.container -->
+			</section>
+			<!--END | main section-->
+
+			<!--pills-->
+			<section class="vc_row pt-80 pb-120" id="about">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-lg-6">
+
+							<header class="fancy-title" data-custom-animations="true"
+								data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"translateX":-32,"opacity":0},"animations":{"translateX":0,"opacity":1}}'>
+
+								<h6 class="text-uppercase ltr-sp-2 font-size-12 font-weight-semibold text-secondary">
+									Sidechain Layer</h6>
+								<h2 class="mt-md-4 pr-md-7 mb-4">Translation of real world assets into Scrypta blockchain
+								</h2>
+
+								<div class="row">
+
+									<div class="lqd-column col-xs-4 col-sm-2 pt-3 mb-4">
+
+										<div class="lqd-h-sep">
+											<span class="lqd-h-sep-inner"></span><!-- /.lqd-h-sep-inner -->
+										</div><!-- /.lqd-h-sep -->
+
+									</div><!-- /.col-sm-2 -->
+
+									<div class="lqd-column col-sm-10 col-xs-12">
+										<p>Digitalize and convert anything into a supply of digital assets through the
+											process of "tokenization". That way the physical good, once tokenized,
+											become "fungible", can be transferred, fractioned, stored or traded
+											electronically between different people in a digital way.</p>
+									</div><!-- /.col-sm-10 -->
+
+								</div><!-- /.row -->
+
+							</header><!-- /.fancy-title -->
+
+						</div><!-- /.col-lg-6 -->
+
+						<div class="lqd-column col-lg-5 col-md-6 col-lg-offset-1">
+
+							<div class="lqd-iconbox-stack" data-custom-animations="true"
+								data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"400","delay":"100","easing":"easeOutQuint","direction":"forward","initValues":{"scaleX":0.25,"scaleY":0.25,"opacity":0},"animations":{"scaleX":1,"scaleY":1,"opacity":1}}'>
+
+								<div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-blue"
+									data-plugin-options='{"color": "#3d59e8"}'>
+
+									<div class="iconbox-icon-wrap">
+										<span class="iconbox-icon-container">
+											<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 495.5 490" style="enable-background:new 0 0 64 64;"
+												xml:space="preserve">
+												<style type="text/css">
+													.st0 {
+														fill: #3D59E8;
+													}
+												</style>
+												<g>
+													<path class="st0"
+														d="M495.5,156V42c0-23.2-18.8-42-42-42h-114c-23.2,0-42,18.8-42,42v38.4c-3.1-1.7-6.7-2.6-10.5-2.6h-20.5
+													c-6.4,0-12.2,2.7-16.3,7c-4.2-4.8-10.4-7.8-17.3-7.8h-23.3c-4.2,0-8.2,1.1-11.6,3.1V42c0-23.2-18.8-42-42-42H42C18.8,0,0,18.8,0,42
+													v114c0,23.2,18.8,42,42,42h114c23.2,0,42-18.8,42-42v-34.9c3.4,2,7.4,3.1,11.6,3.1h23.3c6.5,0,12.4-2.7,16.6-7
+													c4.1,4.8,10.2,7.8,17,7.8H287c3.8,0,7.4-0.9,10.5-2.6V156c0,23.2,18.8,42,42,42h37.3c-2.2,3.4-3.6,7.5-3.6,12v18.2
+													c0,6.2,2.6,11.8,6.7,15.8c-4.6,4.1-7.5,10.1-7.5,16.7v20.8c0,3.8,1,7.4,2.6,10.5h-35.6c-23.2,0-42,18.8-42,42v36.4
+													c-3.1-1.7-6.7-2.6-10.5-2.6h-20.5c-6.4,0-12.2,2.7-16.3,7c-4.2-4.8-10.4-7.8-17.3-7.8h-23.3c-4.2,0-8.2,1.1-11.6,3.1V334
+													c0-23.2-18.8-42-42-42H42c-23.2,0-42,18.8-42,42v114c0,23.2,18.8,42,42,42h114c23.2,0,42-18.8,42-42v-36.9c3.4,2,7.4,3.1,11.6,3.1
+													h23.3c6.5,0,12.4-2.7,16.6-7c4.1,4.8,10.2,7.8,17,7.8H287c3.8,0,7.4-0.9,10.5-2.6V448c0,23.2,18.8,42,42,42h114
+													c23.2,0,42-18.8,42-42V334c0-23.2-18.8-42-42-42h-36.4c1.7-3.1,2.6-6.7,2.6-10.5v-20.8c0-6.3-2.6-11.9-6.7-16
+													c4.6-4,7.5-9.9,7.5-16.5V210c0-4.4-1.3-8.5-3.6-12h36.6C476.7,198,495.5,179.2,495.5,156z M186,156c0,16.5-13.5,30-30,30H42
+													c-16.5,0-30-13.5-30-30V42c0-16.5,13.5-30,30-30h114c16.5,0,30,13.5,30,30V156z M186,448c0,16.5-13.5,30-30,30H42
+													c-16.5,0-30-13.5-30-30V334c0-16.5,13.5-30,30-30h114c16.5,0,30,13.5,30,30V448z M232.9,402.2h-23.3c-6.1,0-11.1-5-11.1-11.1v-1
+													c0-6.1,5-11.1,11.1-11.1h23.3c6.1,0,11.1,5,11.1,11.1v0.2v0.9C244,397.2,239,402.2,232.9,402.2z M287,403h-20.5
+													c-5.8,0-10.5-4.7-10.5-10.5v-1.4v-0.9c0-5.8,4.7-10.5,10.5-10.5H287c5.8,0,10.5,4.7,10.5,10.5v2.2C297.5,398.3,292.8,403,287,403z
+													M483.5,334v114c0,16.5-13.5,30-30,30h-114c-16.5,0-30-13.5-30-30v-55.5v-2.2V334c0-16.5,13.5-30,30-30H395h2.1h56.3
+													C470,304,483.5,317.5,483.5,334z M395,292c-5.8,0-10.5-4.7-10.5-10.5v-20.8c0-5.8,4.7-10.5,10.5-10.5h0.2h1.9
+													c5.8,0,10.5,4.7,10.5,10.5v20.8c0,5.8-4.7,10.5-10.5,10.5H395z M395.2,238.1c-5.5,0-10-4.5-10-10V210c0-5.5,4.5-10,10-10h3.3
+													c5.5,0,10,4.5,10,10v18.2c0,5.5-4.5,10-10,10h-1.4H395.2z M232.9,112.2h-23.3c-6.1,0-11.1-5-11.1-11.1v-1c0-6.1,5-11.1,11.1-11.1
+													h23.3c6.1,0,11.1,5,11.1,11.1v0.2v0.9C244,107.2,239,112.2,232.9,112.2z M287,113h-20.5c-5.8,0-10.5-4.7-10.5-10.5v-1.4v-0.9
+													c0-5.8,4.7-10.5,10.5-10.5H287c5.8,0,10.5,4.7,10.5,10.5v2.2C297.5,108.3,292.8,113,287,113z M309.5,156v-53.5v-2.2V42
+													c0-16.5,13.5-30,30-30h114c16.5,0,30,13.5,30,30v114c0,16.5-13.5,30-30,30h-114C323,186,309.5,172.5,309.5,156z" />
+													<path class="st0" d="M88.5,26h-48c-11,0-15,9.6-15,16v25c0,2.2,1.8,4,4,4s4-1.8,4-4V42c0-1.3,0.4-8,7-8h48c2.2,0,4-1.8,4-4
+													S90.7,26,88.5,26z" />
+													<path class="st0" d="M383.5,26h-48c-11,0-15,9.6-15,16v25c0,2.2,1.8,4,4,4s4-1.8,4-4V42c0-1.3,0.4-8,7-8h48c2.2,0,4-1.8,4-4
+													S385.7,26,383.5,26z" />
+													<path class="st0" d="M383.5,315h-48c-11,0-15,9.6-15,16v25c0,2.2,1.8,4,4,4s4-1.8,4-4v-25c0-1.3,0.4-8,7-8h48c2.2,0,4-1.8,4-4
+													S385.7,315,383.5,315z" />
+													<path class="st0" d="M87.5,315h-48c-11,0-15,9.6-15,16v25c0,2.2,1.8,4,4,4s4-1.8,4-4v-25c0-1.3,0.4-8,7-8h48c2.2,0,4-1.8,4-4
+													S89.7,315,87.5,315z" />
+												</g>
+											</svg>
+
+										</span>
+									</div><!-- /.iconbox-icon-wrap -->
+									<div class="contents">
+										<p class="font-size-14">
+											<strong>FAST</strong>
+										</p>
+									</div><!-- /.contents -->
+
+								</div><!-- /.iconbox -->
+
+								<div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-pink"
+									data-plugin-options='{"color": "#fe688b"}'>
+
+									<div class="iconbox-icon-wrap">
+										<span class="iconbox-icon-container">
+											<svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												viewBox="0 0 512 512" style="enable-background:new 0 0 64 64;"
+												xml:space="preserve">
+												<style type="text/css">
+													.st1 {
+														fill: #FD678A;
+													}
+												</style>
+												<g>
+													<path class="st1" d="M347.8,155.1c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10C357.8,159.6,353.4,155.1,347.8,155.1
+													z" />
+													<path class="st1" d="M166.1,336.8c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10C176.1,341.3,171.7,336.8,166.1,336.8
+													z" />
+													<path class="st1" d="M500.6,61.5c-3.4-0.8-6.9,0.2-9.4,2.7L449.7,106h-19.9L408,83.3V63.2l40.9-41.5c2.4-2.5,3.4-6,2.6-9.3
+													c-0.8-3.4-3.3-6.1-6.5-7.2C434.7,1.8,423.9,0,413,0c-32.6,0-62.2,15.2-81.2,41.7c-17.8,24.8-23.3,55.2-15.4,84.2l-73.7,73.7
+													L120,76.6V52.4c0-3.5-1.8-6.8-4.9-8.6L44.4,1.4c-3.9-2.4-9-1.7-12.2,1.5L3.9,31.2c-3.2,3.2-3.9,8.3-1.5,12.2l42.4,70.7
+													c1.8,3,5.1,4.9,8.6,4.9l24.1,0l122.7,123l-73.4,73.4c-29.1-7.9-59.5-2.4-84.3,15.5C16.2,349.8,1,379.4,1,412
+													c0,10.9,1.8,21.7,5.2,31.9c1.1,3.3,3.8,5.8,7.2,6.5c3.4,0.8,6.9-0.2,9.4-2.7L64.2,406h20l22.8,22.8v20l-41.8,41.5
+													c-2.5,2.4-3.5,6-2.7,9.4c0.8,3.4,3.3,6.1,6.5,7.2c10.3,3.5,21,5.2,31.9,5.2c32.6,0,62.1-15.2,81.2-41.6
+													c17.8-24.8,23.3-55.2,15.5-84.3l58.9-58.9l13.5,14.7l-6.2,6.2c-3.9,3.9-3.9,10.2,0,14.1c3.9,3.9,10.2,3.9,14.1,0l5.6-5.6
+													l126.7,137.6c0.1,0.1,0.2,0.2,0.3,0.3c23.4,23.4,61.4,23.4,84.9,0c23.4-23.4,23.4-61.5,0-84.9c-0.1-0.1-0.2-0.2-0.3-0.3
+													L357.3,282.8l5.5-5.5c3.9-3.9,3.9-10.2,0-14.1s-10.2-3.9-14.1,0l-6.2,6.2l-14.7-13.5l59.2-59.2c8.4,2.3,17.1,3.4,25.9,3.4
+													c55.1,0,100-44.9,100-100c0-10.9-1.8-21.7-5.2-31.9C506.7,64.8,503.9,62.3,500.6,61.5z M88.8,101.9c-1.9-1.9-4.4-2.8-7.1-2.8
+													l-22.6,0L23.6,39.8l17.2-17.2L100,58.1v22.6c0,2.6,1.1,5.2,2.9,7.1l125.7,125.9l-14.1,14.1L88.8,101.9z M343.1,297l138.3,126.8
+													c15.4,15.6,15.4,40.9-0.1,56.4c-15.6,15.6-40.8,15.6-56.4,0.1l-127.1-138L343.1,297z M328.4,283.5l-44.2,44.2L270.7,313l43-43
+													L328.4,283.5z M413,180c-8.7,0-17.3-1.4-25.6-4.2c-3.6-1.2-7.6-0.3-10.3,2.4C327,228.4,219,336.4,179.2,376.2
+													c-2.7,2.7-3.6,6.7-2.4,10.3c8.3,24.7,4.3,51-10.9,72.2C150.7,479.8,127,492,101,492c-2.9,0-5.8-0.2-8.7-0.5L124,460
+													c1.9-1.9,3-4.4,3-7.1v-28.3c0-2.7-1.1-5.2-2.9-7.1l-28.6-28.6c-1.9-1.9-4.4-2.9-7.1-2.9H60.1c-2.7,0-5.2,1.1-7.1,3l-31.5,31.8
+													c-0.3-2.9-0.5-5.8-0.5-8.7c0-26.1,12.1-49.7,33.3-64.9c21.2-15.3,47.6-19.2,72.2-10.9c3.6,1.2,7.6,0.3,10.3-2.4
+													c0.6-0.5,197.8-197.8,197.9-197.9c2.7-2.7,3.6-6.7,2.4-10.3c-8.3-24.7-4.3-51,10.9-72.2C363.3,32.1,386.9,20,413,20
+													c3,0,6,0.2,9,0.5l-31.1,31.6c-1.8,1.9-2.9,4.4-2.9,7v28.3c0,2.6,1,5.1,2.8,6.9l27.6,28.6c1.9,2,4.5,3.1,7.2,3.1h28.3
+													c2.7,0,5.2-1.1,7.1-3l31.5-31.8c0.3,2.9,0.5,5.8,0.5,8.7C493,144.1,457.1,180,413,180z" />
+													<path class="st1" d="M312.5,186.4L187.4,311.5c-3.9,3.9-3.9,10.2,0,14.1c3.9,3.9,10.2,3.9,14.1,0l125.1-125.1
+													c3.9-3.9,3.9-10.2,0-14.1S316.4,182.4,312.5,186.4z" />
+													<path class="st1" d="M438.9,452c3.9,3.9,10.2,3.9,14.1,0c3.9-3.9,3.9-10.2,0-14.1L362.8,348c-3.9-3.9-10.2-3.9-14.1,0
+													c-3.9,3.9-3.9,10.2,0,14.1L438.9,452z" />
+												</g>
+											</svg>
+
+										</span>
+									</div><!-- /.iconbox-icon-wrap -->
+									<div class="contents">
+										<p class="font-size-14">
+											<strong>MODULAR</strong>
+										</p>
+									</div><!-- /.contents -->
+
+								</div><!-- /.iconbox -->
+
+								<div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-green"
+									data-plugin-options='{"color": "#28d5a7"}'>
+
+									<div class="iconbox-icon-wrap">
+										<span class="iconbox-icon-container">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px"
+												height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+												xml:space="preserve">
+												<defs xmlns="http://www.w3.org/2000/svg">
+													<linearGradient gradientUnits="userSpaceOnUse" id="grad395875"
+														x1="0%" y1="0%" x2="0%" y2="100%">
+														<stop offset="0%" stop-color="rgb(40, 213, 167)"></stop>
+														<stop offset="100%" stop-color="rgb(40, 213, 167)"></stop>
+													</linearGradient>
+												</defs>
+												<rect x="1" y="7" fill="none" stroke="url(#grad395875)" stroke-width="2"
+													stroke-miterlimit="10" width="62" height="50"></rect>
+												<line fill="none" stroke="url(#grad395875)" stroke-width="2"
+													stroke-miterlimit="10" x1="1" y1="15" x2="63" y2="15"></line>
+												<line fill="none" stroke="url(#grad395875)" stroke-width="2"
+													stroke-miterlimit="10" x1="10" y1="11" x2="6" y2="11"></line>
+												<line fill="none" stroke="url(#grad395875)" stroke-width="2"
+													stroke-miterlimit="10" x1="18" y1="11" x2="14" y2="11"></line>
+												<line fill="none" stroke="url(#grad395875)" stroke-width="2"
+													stroke-miterlimit="10" x1="26" y1="11" x2="22" y2="11"></line>
+												<polyline fill="none" stroke="url(#grad395875)" stroke-width="2"
+													stroke-linejoin="bevel" stroke-miterlimit="10"
+													points="23,35 30,42 43,29 "></polyline>
+											</svg>
+										</span>
+									</div><!-- /.iconbox-icon-wrap -->
+									<div class="contents">
+										<p class="font-size-14">
+											<strong>SIMPLE</strong>
+										</p>
+									</div><!-- /.contents -->
+
+								</div><!-- /.iconbox -->
+
+							</div><!-- /.lqd-iconbox-stack -->
+
+						</div><!-- /.col-lg-5 col-md-6 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section><!-- /.vc_row -->
+			<!--END | pills-->
+
+			<!--steps-->
+			<section class="vc_row bg-no-repeat pt-150 pb-150" id="works">
+				<div class="container">
+
+					<div class="row" data-custom-animations="true"
+						data-ca-options='{"triggerHandler":"inview", "animationTarget":"all-childs", "duration":"1600", "delay":"160", "easing":"easeOutQuint", "initValues":{"translateY": 100, "opacity":0}, "animations":{"translateY": 0, "opacity":1}}'>
+
+						<div class="lqd-column col-md-12 mb-60">
+
+							<header class="fancy-title">
+								<h6 class="text-uppercase">How it works</h6>
+								<h2><strong>Simple process</strong> to start</h2>
+							</header>
+
+						</div><!-- /.lqd-column col-md-12 -->
+
+						<div class="lqd-column col-md-4">
+
+							<div
+								class="iconbox text-left iconbox-xl iconbox-icon-image iconbox-shadow border-radius-5 px-5 pt-40 pb-55 mr-md-4">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container mb-35">
+										<svg xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+											y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;"
+											xml:space="preserve">
+											<g>
+												<g>
+													<g>
+														<path
+															d="M341.333,0H42.667C19.093,0,0,19.093,0,42.667v298.667C0,364.907,19.093,384,42.667,384h298.667    C364.907,384,384,364.907,384,341.333V42.667C384,19.093,364.907,0,341.333,0z M234.667,298.667H192V128h-42.667V85.333h85.333    V298.667z"
+															data-original="#000000" class="active-path"
+															data-old_color="#000000" fill="#E85266" />
+													</g>
+												</g>
+											</g>
+										</svg>
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<div class="contents">
+									<h3>Login</h3>
+									<p><span style="font-size: 18px;line-height: 30px">Create your Scrypta digital
+											identity to login and use Planum. You can use your .sid file or
+											use
+											<a href="https://id.scryptachain.org/" target="_blank"
+												style="color: #FD678A;">
+												Scrypta ID browser extension.</a></span></p>
+								</div><!-- /.contants -->
+							</div><!-- /.iconbox -->
+
+						</div><!-- /.lqd-column col-md-4 -->
+
+						<div class="lqd-column col-md-4">
+
+							<div
+								class="iconbox text-left iconbox-xl iconbox-icon-image iconbox-shadow border-radius-5 px-5 pt-40 pb-55 mx-md-2">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container mb-45">
+										<svg xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+											y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;"
+											xml:space="preserve">
+											<g>
+												<g>
+													<g>
+														<path
+															d="M341.333,0H42.667C19.093,0,0,19.093,0,42.667v298.667C0,364.907,19.093,384,42.667,384h298.667    C364.907,384,384,364.907,384,341.333V42.667C384,19.093,364.907,0,341.333,0z M256,170.667c0,23.573-19.093,42.667-42.667,42.667    h-42.667V256H256v42.667H128v-85.333c0-23.573,19.093-42.667,42.667-42.667h42.667V128H128V85.333h85.333    C236.907,85.333,256,104.427,256,128V170.667z"
+															data-original="#000000" class="active-path"
+															data-old_color="#000000" fill="#E85266" />
+													</g>
+												</g>
+											</g>
+										</svg>
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<div class="contents">
+									<h3>Token Parameters</h3>
+									<p><span style="font-size: 18px;line-height: 30px">You can choose name and ticker of
+											your token, data metrics like total supply and decimals, plus few additional
+											features.</span></p>
+								</div><!-- /.contants -->
+							</div><!-- /.iconbox -->
+
+						</div><!-- /.lqd-column col-md-4 -->
+
+						<div class="lqd-column col-md-4">
+
+							<div
+								class="iconbox text-left iconbox-xl iconbox-icon-image iconbox-shadow border-radius-5 px-5 pt-40 pb-55 ml-md-4">
+								<div class="iconbox-icon-wrap">
+									<span class="iconbox-icon-container mb-45">
+										<svg xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
+											y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;"
+											xml:space="preserve">
+											<g>
+												<g>
+													<g>
+														<path
+															d="M341.333,0H42.667C19.093,0,0,19.093,0,42.667v298.667C0,364.907,19.093,384,42.667,384h298.667    C364.907,384,384,364.907,384,341.333V42.667C384,19.093,364.907,0,341.333,0z M256,160c0,17.707-14.293,32-32,32    c17.707,0,32,14.293,32,32v32c0,23.573-19.093,42.667-42.667,42.667H128V256h85.333v-42.667h-42.667v-42.667h42.667V128H128    V85.333h85.333C236.907,85.333,256,104.427,256,128V160z"
+															data-original="#000000" class="active-path"
+															data-old_color="#000000" fill="#E85266" />
+													</g>
+												</g>
+											</g>
+										</svg>
+									</span>
+								</div><!-- /.iconbox-icon-wrap -->
+								<div class="contents">
+									<h3>Asset Creation</h3>
+									<p><span style="font-size: 18px;line-height: 30px">When a new asset is issued,
+											Planum create the first sidechain genesis transaction for the
+											new token.</span></p>
+								</div><!-- /.contants -->
+							</div><!-- /.iconbox -->
+
+						</div><!-- /.lqd-column col-md-4 -->
+
+					</div><!-- /.row -->
+
+					<div class="lqd-space visible-lg visible-md" style="height: 200px;"></div>
+
+					<div class="container">
+						<div class="row d-flex flex-wrap align-items-center">
+
+							<div class="lqd-column col-md-5" data-custom-animations="true"
+								data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateX":-37,"opacity":0},"animations":{"translateX":0,"opacity":1}}'>
+
+								<header class="fancy-title fancy-title-underlined pr-md-2 pb-6">
+									<h2 class="pr-md-7 mr-md-6 mb-30">Asset management</h2>
+									<p>After the token is issued and the balance is visible on the main address, the
+										token can transferred to anyone or stored inside
+										<a href="https://manent.app/en" target="_blank" style="color: #FD678A;">Manent
+											App</a> or desktop wallet.</p>
+								</header><!-- /.fancy-title -->
+
+								<h5>Simple Transfer</h5>
+								<p class="mb-5">Transfer any amount of token to anyone. You just need the Lyra address
+									of the receiver. From inside your token control panel, you have the option to choose
+									which token you want to transfer, the receiver address and the amount, exactly as
+									you do when sending cryptocurrencies to other users.</p>
+
+								<h5>Costs</h5>
+								<p class="mb-5">Each transfer of tokens will cost 0,001 LYRA (roughly $0,00002) and the
+									fee transactions are not correlated to the amount of token supply that is generated
+									or transfered to other users.</p>
+							</div><!-- /.col-md-5 -->
+
+							<div class="lqd-column col-md-6 col-md-offset-1">
+
+								<div class="liquid-img-group-container stretch-to-right">
+									<div class="liquid-img-group-inner">
+										<div class="liquid-img-group-single liquid-img-group-browser"
+											data-shadow-style="4" data-inview="true" data-animate-shadow="true"
+											data-reveal="true" data-reveal-options='{"direction":"lr"}'>
+											<span class="liquid-img-group-url"><span>https://</span>chains.planum.dev/</span>
+											<div class="liquid-img-group-img-container">
+												<div class="liquid-img-container-inner">
+													<figure data-responsive-bg="true">
+														<img src="./assets/img/token_manager.png" alt="Ave" />
+													</figure>
+												</div><!-- /.liquid-img-container-inner -->
+											</div><!-- /.liquid-img-group-img-container -->
+										</div><!-- /.liquid-img-group-single -->
+									</div><!-- /.liquid-img-group-inner -->
+								</div><!-- /.liquid-img-group-container -->
+
+							</div><!-- /.col-lg-6 col-lg-offset-2 -->
+
+						</div><!-- /.row -->
+					</div><!-- /.container -->
+
+				</div><!-- /.container -->
+			</section><!-- /.vc_row -->
+			<!--END | steps-->
+
+			<!--Manent-->
+			<section class="vc_row pt-60 pb-30" id="manent">
+				<div class="container">
+					<div class="row d-flex flex-wrap align-items-center">
+
+						<div class="lqd-column col-md-7 hidden-sm hidden-xs">
+
+							<div class="lqd-parallax-images-3">
+
+								<div class="liquid-img-group-container">
+
+									<div class="liquid-img-group-inner">
+
+										<div class="liquid-img-group-single" data-parallax-to='{ "translateY": -50 }'>
+											<div class="liquid-img-group-img-container">
+												<div class="liquid-img-container-inner" data-parallax="true"
+													data-parallax-options='{ "overflowHidden": false, "easing": "linear" }'
+													data-parallax-from='{ "translateY": 160 }'
+													data-parallax-to='{ "translateY": -50 }'>
+													<figure>
+														<img src="./assets/img/mockup_2.png" alt="iPhone">
+													</figure>
+												</div><!-- /.liquid-img-group-inner -->
+											</div><!-- /.liquid-img-group-content -->
+										</div><!-- /.liquid-img-group-single -->
+
+										<div class="liquid-img-group-single">
+											<div class="liquid-img-group-img-container">
+												<div class="liquid-img-container-inner" data-parallax="true"
+													data-parallax-options='{ "overflowHidden": false, "easing": "linear" }'
+													data-parallax-from='{ "translateY": 185 }'
+													data-parallax-to='{ "translateY": -110 }'>
+													<figure>
+														<img src="./assets/img/mockup_1.png" alt="iPhone">
+													</figure>
+												</div><!-- /.liquid-img-group-inner -->
+											</div><!-- /.liquid-img-group-content -->
+										</div><!-- /.liquid-img-group-single -->
+									</div><!-- /.liquid-img-group-inner -->
+
+								</div><!-- /.liquid-img-group-container -->
+
+							</div><!-- /.lqd-parallax-images-3 -->
+
+						</div><!-- /.col-md-7 hidden-sm-hidden-xs -->
+
+						<div class="lqd-column col-md-5" data-custom-animations="true"
+							data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"120","easing":"easeOutQuint","direction":"forward","initValues":{"translateX":-37,"opacity":0},"animations":{"translateX":0,"opacity":1}}'>
+							<header class="fancy-title fancy-title-underlined pr-md-2 pb-6">
+								<h2 class="pr-md-7 mr-md-6 mb-30">Use Manent App for an optimal experience</h2>
+								<p>This will allow to easily create your first and brand new digital identity, or import
+									an existing one and manage your token easly.</p>
+							</header><!-- /.fancy-title -->
+
+							<a href="https://manent.app/en/" target="_blank"
+								class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold"
+								data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+								<span>
+									<span class="btn-txt">Learn More</span>
+								</span>
+							</a>
+
+						</div><!-- /.col-md-5 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			<!--END | Manent-->
+
+			<!--explorer-->
+			<section class="vc_row pt-50 pb-65" style="margin-top: 100px;" id="explorer">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-lg-8 col-md-6">
+
+							<div class="liquid-img-group-container stretch-to-left">
+								<div class="liquid-img-group-inner">
+									<div class="liquid-img-group-single liquid-img-group-browser" data-shadow-style="4"
+										data-inview="true" data-animate-shadow="true" data-reveal="true"
+										data-reveal-options='{"direction":"rl"}'>
+										<span class="liquid-img-group-url"><span>https://</span>planum.dev/</span>
+										<div class="liquid-img-group-img-container">
+											<div class="liquid-img-container-inner">
+												<figure data-responsive-bg="true">
+													<img src="./assets/img/planum_explorer.png" alt="Ave" />
+												</figure>
+											</div><!-- /.liquid-img-container-inner -->
+										</div><!-- /.liquid-img-group-img-container -->
+									</div><!-- /.liquid-img-group-single -->
+								</div><!-- /.liquid-img-group-inner -->
+							</div><!-- /.liquid-img-group-container -->
+
+						</div><!-- /.col-lg-8 col-md-6 -->
+
+						<div class="lqd-column col-lg-4 col-md-6 pt-7" data-custom-animations="true"
+							data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"350","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":28,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
+							<header class="fancy-title mb-md-9">
+
+								<h2 class="mb-md-7 " data-fittext="true"
+									data-fittext-options='{ "compressor": 0.5, "maxFontSize": 65, "minFontSize": 35 }'>
+									<span class="font-size-1x">Sidechain Explorer</span>
+								</h2>
+								<h6 class="font-size-24 font-weight-normal font-style-italic pr-5"
+									data-split-text="true" data-split-options='{"type":"lines"}'> A block explorer
+									dedicated to the sidchains that rannuning on Scrypta Blockchain. This tool allows
+									you to explore the whole entire sidechain layer. </h6>
+
+							</header><!-- /.fancy-title -->
+
+							<a href="https://chains.planum.dev/"
+								class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold"
+								data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+								<span>
+									<span class="btn-txt">Explorer</span>
+								</span>
+							</a>
+
+						</div><!-- /.col-lg-4 col-md-6 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			<!--END | explorer-->
+
+			<!--call to action-->
+			<section class="vc_row pt-50 pb-60">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-10 col-md-offset-1 text-center" data-custom-animations="true"
+							data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":1200,"delay":100,"initValues":{"translateY":80,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
+							<header class="fancy-title fancy-title-big mb-6">
+								<h2 data-split-text="true" data-split-options='{"type":"lines"}'>
+									Learn how to create your digital <br> asset with  
+									<span style="color: #FE688A;">Planum</span>
+								</h2>
+							</header><!-- /.fancy-title -->
+
+							<a href="https://wiki.scryptachain.org/planum/planum-guide"
+								class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-14 font-weight-semibold"
+								data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+								<span>
+									<span class="btn-txt">Learn How</span>
+								</span>
+							</a>
+
+						</div><!-- /.col-md-10 col-md-offset-1 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			<!--END | call to action-->
+
+		</main><!-- /#content.content -->
+
+		<!--footer desk-->
+		<footer class="footer_desk main-footer bg-charade pt-70" data-sticky-footer="true">
+			<section>
+				<div class="row">
+
+					<div class="lqd-column col-md-2 col-md-offset-1 col-sm-6">
+
+						<img src="./assets/img/scrypta_white.png" style="width: 60%; margin-top: 20px; margin-bottom: 20px;">
+						<p class="widget-title text-white">Planum is powered by <br> <strong>Scrypta</strong></p>
+
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+					<div class="lqd-column col-md-2 col-md-offset-2 col-sm-6">
+						<h3 class="widget-title text-white"><strong>OFFICIAL WEBSITES</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="http://scryptachain.org/" target="_blank">Scrypta Blockchain</a></li>
+							<li><a href="http://scrypta.foundation/" target="_blank">Scrypta Foundation</a></li>
+							<li><a href="https://scryptaconsortium.org/" target="_blank">Scrypta Consortium</a></li>
+							<li><a href="https://explorer.scryptachain.org/" target="_blank">Scrypta Block Explorer</a></li>
+							<li><a href="https://wiki.scryptachain.org/" target="_blank">Wiki-guide</a></li>
+						</ul>
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+					<div class="lqd-column col-md-2 col-sm-6">
+						<h3 class="widget-title text-white"> <strong>SCRYPTA PRODUCTS</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="https://manent.app/en/" target="_blank">Scrypta Manent</a></li>
+							<li><a href="https://chains.planum.dev/" target="_blank">Planum</a></li>
+							<li><a href="http://electio.app/" target="_blank">Electio</a></li>
+							<li><a href="http://news.scryptachain.org/" target="_blank">Scrypta News</a></li>
+							<li><a href="http://socialpay.live/" target="_blank">Social Pay</a></li>
+						</ul>
+					</div><!-- /.col-md-3 col-sm-6 -->
+					
+					<div class="lqd-column col-md-2 col-sm-6">
+						<h3 class="widget-title text-white"><strong>BLOCKCHAIN STATS</strong></h3>
+						<ul class="lqd-custom-menu reset-ul text-white">
+							<li><a href="https://masternodes.online/currencies/LYRA/" target="_blank">Masternode
+									Online</a></li>
+							<li><a href="https://coins.masternode.buzz/LYRA" target="_blank">Masternode Buzz</a></li>
+							<li><a href="https://www.coingecko.com/en/coins/scrypta" target="_blank">Coingecko</a>
+							</li>
+						</ul>
+					</div><!-- /.col-md-3 col-sm-6 -->
+
+				</div><!-- /.row -->
+
+			</section>
+
+			<section class="bt-fade-white-015 pt-35 pb-35 mt-50">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-6">
+
+							<ul class="lqd-custom-menu reset-ul inline-nav">
+								<li>
+									<a href="https://github.com/scryptachain/" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/scryptafoundation" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/scryptachain" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/scrypta-foundation/" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/scryptachain_official" target="_blank">
+										<i class="fa fa-telegram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/@scryptachain" target="_blank">
+										<i class="fa fa-medium"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://discord.gg/8mfDRVK" target="_blank">
+										<i class="fab fa-discord"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://wiki.scryptachain.org/" target="_blank">
+										<i class="fa fa-wikipedia-w"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCOANBiYyULoZwmaxjvOnM4Q" target="_blank">
+										<i class="fa fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+
+						</div><!-- /.col-md-6 -->
+
+						<div class="lqd-column col-md-6 text-md-right" style="margin-top: 10px;">
+							<p class="my-0"><span style="font-size: 15px;">
+									<span style="color: #FD678A;">Planum</span> is an open
+									<a href="https://github.com/scryptachain.org" target="_blank" style="color: #FD678A;">open-source</a> project
+									by
+									<a href="https://scrypta.foundation" target="_blank" style="color: #FD678A;">Scrypta Foundation</a>
+								</span>
+							</p>
+						</div><!-- /.col-md-6 text-md-right -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+		</footer>
+		<!-- END Footer desk /.main-footer -->
+
+		<!--Footer mobile-->
+		<footer class="footer_mob main-footer bg-charade pt-70" data-sticky-footer="true">
+			<section>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-2 col-sm-6 text-center">
+
+							<img src="./assets/img/scrypta_white.png" style="width: 50%; margin-top: 20px;">
+							<p>Planum is powered by <br> Scrypta</p>
+
+						</div><!-- /.col-md-3 col-sm-6 -->
+
+						<div class="lqd-column col-md-2 col-sm-6 text-center">
+							<h3 class="widget-title text-white"><strong>OFFICIAL WEBSITES</strong></h3>
+							<ul class="lqd-custom-menu reset-ul text-white">
+								<li><a href="http://scryptachain.org/" target="_blank">Scrypta Blockchain</a></li>
+								<li><a href="http://scrypta.foundation/" target="_blank">Scrypta Foundation</a></li>
+								<li><a href="https://scryptaconsortium.org/" target="_blank">Scrypta Consortium</a></li>
+								<li><a href="https://explorer.scryptachain.org/" target="_blank">Block Explorer</a></li>
+								<li><a href="https://wiki-it.scryptachain.org/" target="_blank">Wiki-guide</a></li>
+							</ul>
+						</div><!-- /.col-md-3 col-sm-6 -->
+
+						<div class="lqd-column col-md-2 col-sm-6 text-center">
+							<h3 class="widget-title text-white"> <strong>PRODUCTS</strong></h3>
+							<ul class="lqd-custom-menu reset-ul text-white">
+								<li><a href="https://manent.app/" target="_blank">Scrypta Manent</a></li>
+								<li><a href="https://planum.dev/" target="_blank">Planum</a></li>
+								<li><a href="http://electio.app/" target="_blank">Electio</a></li>
+								<li><a href="http://news.scryptachain.org/" target="_blank">Scrypta News</a></li>
+								<li><a href="http://socialpay.live/" target="_blank">Social Pay</a></li>
+							</ul>
+
+						</div><!-- /.col-md-3 col-sm-6 -->
+					</div><!-- /.row -->
+				</div>
+
+			</section>
+
+			<section class="bt-fade-white-015 pt-35 pb-35 mt-50">
+				<div class="container text-center">
+					<div class="row">
+
+						<div class="lqd-column col-md-6">
+
+							<ul class="lqd-custom-menu reset-ul inline-nav">
+								<li>
+									<a href="https://github.com/scryptachain/" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/scryptafoundation" target="_blank">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/scryptachain" target="_blank">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/scrypta-foundation/" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://t.me/scryptachain_official" target="_blank">
+										<i class="fa fa-telegram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://medium.com/@scryptachain" target="_blank">
+										<i class="fa fa-medium"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://discord.gg/8mfDRVK" target="_blank">
+										<i class="fab fa-discord"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://wiki-it.scryptachain.org/" target="_blank">
+										<i class="fa fa-wikipedia-w"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCOANBiYyULoZwmaxjvOnM4Q" target="_blank">
+										<i class="fa fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+
+						</div><!-- /.col-md-6 -->
+
+						<div class="lqd-column col-md-6 text-md-right" style="margin-top: 10px;">
+							<p class="my-0"><span style="font-size: 15px;">
+									<span style="color: #FD678A;">Planum</span> is an open
+									<a href="https://github.com/scryptachain.org" target="_blank" style="color: #FD678A;">open-source</a> project
+									by
+									<a href="https://scrypta.foundation" target="_blank" style="color: #FD678A;">Scrypta Foundation</a>
+								</span>
+							</p>
+						</div><!-- /.col-md-6 text-md-right -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+		</footer>
+		<!-- END Footer mobile /.main-footer -->
+
+	</div><!-- /#wrap -->
+
+	<script src="./assets/vendors/jquery.min.js"></script>
+	<script src="./assets/js/theme-vendors.js"></script>
+	<script src="./assets/js/theme.min.js"></script>
+
+</body>
+
+<style>
+
+
+	@media screen and (max-width: 768px) {
+		.footer_desk {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 769px) {
+
+		.footer_mob {
+			display: none;
+		}
+	}
+</style>
+
+</html>
